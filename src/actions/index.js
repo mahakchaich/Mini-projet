@@ -22,6 +22,7 @@ export function signInAPI(){
         .then((payload)=>{
            console.log(payload.user);
            dispatch(setUser(payload.user));
+           window.location.replace("http://localhost:3000/home");
         })
         .catch((error)=>alert(error.message));
     };

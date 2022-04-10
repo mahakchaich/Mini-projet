@@ -9,17 +9,16 @@ const Leftside = (props) => {
           <CardBackground />
           <a>
             <Photo />
-            <Link>Welcome, {props.user ? props.user.displayName :"there"}!</Link>
+            <Link>bienvenue, {props.user ? props.user.displayName :"there"}!</Link>
           </a>
           <a>
-            <AddPhotoText>Add a photo</AddPhotoText>
+            <AddPhotoText>Add a Post</AddPhotoText>
           </a>
         </UserInfo>
         <Widget>
           <a>
             <div>
-              <span>Connections</span>
-              <span>Grow your network</span>
+              <span>avoir des amis qui ont les même intérêts</span>
             </div>
             <img src="/images/widget-icon.svg" alt="" />
           </a>
@@ -27,26 +26,29 @@ const Leftside = (props) => {
         <Item>
           <span>
             <img src="/images/item-icon.svg" alt="" />
-            My Items
+            My Blog
           </span>
         </Item>
       </ArtCard>
 
       <CommunityCard>
         <a>
-          <span>Groups</span>
+          <span>Films
+          <img src="/images/plus-icon.svg" alt="" />
+          </span>
         </a>
         <a>
           <span>
-            Events
+            Series
             <img src="/images/plus-icon.svg" alt="" />
           </span>
         </a>
         <a>
-          <span>Follow Hashtags</span>
+          <span>Avis
+          <img src="/images/plus-icon.svg" alt="" /></span>
         </a>
         <a>
-          <span>Discover more</span>
+          <span>Plus</span>
         </a>
       </CommunityCard>
     </Container>

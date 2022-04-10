@@ -12,16 +12,10 @@ const Blog=(props)=>{
      <Container>
          <div className="blog-page">
     <Header/>
+    <Section><h2>Blog<span>📝</span></h2></Section>
+        
     </div>
-     <Section>
-       <h5>
-         <a>Hiring in a hurry? - </a>
-       </h5>
-       <p>
-         Find talented pros in record time with Upwork and keep business
-         moving.
-       </p>
-     </Section>
+     
      <Layout>
        <Leftside />
        <Main />
@@ -42,11 +36,11 @@ const Content = styled.div`
 `;
 
 const Section = styled.section`
- min-height: 50px;
+ height: 90px;
+
  padding: 16px 0;
  box-sizing: content-box;
  text-align: center;
- text-decoration: underline;
  display: flex;
  justify-content: center;
  h5 {

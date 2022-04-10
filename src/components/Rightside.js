@@ -3,9 +3,12 @@ import styled from "styled-components";
 const Rightside = (props) => {
   return (
     <Container>
+       <BannerCard>
+        <img src="/images/blog.png" alt=""/>
+      </BannerCard>
       <FollowCard>
         <Title>
-          <h2>Add to your feed</h2>
+          <h2>Ajouter à votre Blog :</h2>
           <img src="/images/feed-icon.svg" alt="" />
         </Title>
 
@@ -15,8 +18,8 @@ const Rightside = (props) => {
               <Avatar />
             </a>
             <div>
-              <span>#Linkedin</span>
-              <button>Follow</button>
+              <button>#Film</button>
+              <button>#Serie</button>
             </div>
           </li>
           <li>
@@ -24,15 +27,16 @@ const Rightside = (props) => {
               <Avatar />
             </a>
             <div>
-              <span>#Video</span>
-              <button>Follow</button>
+              <button>#Post</button>
+              <button>#Image</button>
             </div>
           </li>
         </FeedList>
 
         <Recommendation>
-          View all recommendations
-          <img src="/images/right-icon.svg" alt="" />
+        <img src="/images/fleche-gauche.svg" alt="" />
+        voir tous les publications
+          
         </Recommendation>
       </FollowCard>
       <BannerCard>

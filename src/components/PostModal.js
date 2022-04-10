@@ -61,7 +61,7 @@ const PostModal=(props) =>{
         {props.showModal === "open" &&
         <Container>
             <Content>
-              <Header><h2>Create a post</h2>
+              <Header><h2>Ajouter un  Post</h2>
               <button  onClick={(event) => reset(event)}>
                   <img src="/images/close-icon.svg" alt="" />
               </button>
@@ -76,12 +76,12 @@ const PostModal=(props) =>{
                       <span>{props.user.displayName}</span>
                   </UserInfo>
                   <Editor>
- <textarea value={editorText} onChange={(e) =>setEditorText(e.target.value)} placeholder="what do you want to talk about !" autoFocus={true}/>
+ <textarea value={editorText} onChange={(e) =>setEditorText(e.target.value)} placeholder="De quoi veux-tu parler!" autoFocus={true}/>
  { assetArea === "image" ? (
  <UploadImage>
      <input type="file" accept="image/gif, image/jpeg, image/png" name="image" id="file" style={{display : "none" }}
     onChange={handleChange} />
-    <p><label htmlFor="file">Select an image to share</label> </p>
+    <p><label htmlFor="file">Sélectionnez une image à partager</label> </p>
     {shareImage && <img src={URL.createObjectURL(shareImage)}/>}
     </UploadImage>
  ):(
@@ -105,10 +105,7 @@ const PostModal=(props) =>{
                       </AssetButton>
                   </AttachAssets>
                   <ShareComment>
-                  <AssetButton>
-                          <img src="/images/share-comment.svg" alt="" />
-                          Anyone
-                      </AssetButton>
+                 
                       </ShareComment>
                   <PostButton  disabled={!editorText ? true : false} onClick={(event) =>postArticle(event)}>Post</PostButton>
               </SharedCreation>

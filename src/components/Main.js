@@ -28,6 +28,7 @@ const Main = (props) => {
     };
   };
   return (
+   
     
   <Container>
     <ShareBox>
@@ -39,7 +40,7 @@ const Main = (props) => {
       <img src="/images/user.svg" alt=""/>
     )}
       <button onClick={handleClick}
-      disabled={props.loading ? true : false}>Start a post</button>
+      disabled={props.loading ? true : false}>Ajouter un Post</button>
     </div>
     <div>
       <button> 
@@ -49,14 +50,6 @@ const Main = (props) => {
       <button>
        <img src="/images/video-icon.svg" alt="" />
        <span>video</span></button>
-      <button>
-       <img src="/images/event-icon.svg" alt="" />
-       <span>Event</span>
-      </button>
-      <button>
-       <img src="/images/article-icon.svg" alt="" />
-       <span>Write article</span>
-      </button>
      </div>
      </ShareBox>
      <Content>
@@ -85,43 +78,17 @@ const Main = (props) => {
            (article.shareImg && <img src={article.shareImg}/> )}
            </a>
          </ShareImg>
-         <SocialCounts>
-           <li>
-             <button>
-               <img src="https://static-exp1.licdn.com/sc/h/d310t2g24pvdy4pt1jkedo4yb" alt="" />
-               <img src="https://static-exp1.licdn.com/sc/h/5thsbmikm6a8uov24ygwd914f" alt="" />
-               <span>75</span>
-             </button>
-           </li>
-           <li>
-             <a>
-             {article.comments}
-             </a>
-           </li>
-         </SocialCounts>
+       
          <SocialActions>
-         <button>
-           <img src="/images/like-icon.svg" alt=""/>
-           <span>Like</span>
-         </button>
-         <button>
-           <img src="/images/comments-icon.svg" alt=""/>
-           <span>Comments</span>
-         </button>
-         <button>
-           <img src="/images/share-icon.svg" alt=""/>
-           <span>Share</span>
-         </button>
-         <button>
-           <img src="/images/send-icon.svg" alt=""/>
-           <span>Send</span>
-         </button>
+        
          </SocialActions>
        </Article>
           ))}
        </Content>
      <PostModal showModal={showModal} handleClick={handleClick}/>
   </Container>
+    
+    
   )
 };
 
