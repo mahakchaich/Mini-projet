@@ -14,7 +14,7 @@ const Header=(props)=>{
                 <NavLink to="blog" className={(nav) => nav.isActive ?  "nav-active" : ""} onClick={() =>props.signOut()}><li>Se Déconnecter</li></NavLink>
             </ul>
         </nav>
-        <h1>Ma Cinema</h1>
+        <h1>Filmek</h1>
     </div>
   );
 };

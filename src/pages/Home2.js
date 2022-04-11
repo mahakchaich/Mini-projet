@@ -23,7 +23,7 @@ const Home2=(props)=>{
        <Avatar image={logo}/>
      </div>
      <StyledTitle size={65}>
-     Bienvenue à Ma Cinéma
+     Bienvenue à Filmek
      </StyledTitle>
      <StyledSubTitle size={27}>
      Découvrir Notre Catalogue Des Films
