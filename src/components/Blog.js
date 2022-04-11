@@ -12,7 +12,8 @@ const Blog=(props)=>{
      <Container>
          <div className="blog-page">
     <Header/>
-    <Section><h2>Blog<span>📝</span></h2></Section>
+    <Section><h1>Blog<span>📝</span></h1></Section>
+    <Section><h2>ajouter des publications concernant les avis sur les films</h2></Section>
         
     </div>
      

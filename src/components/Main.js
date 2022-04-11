@@ -53,7 +53,7 @@ const Main = (props) => {
      </div>
      </ShareBox>
      <Content>
-       {props.loading && <img  src="./images/spain-loader.svg" />}
+       {props.loading && <img  src="./images/spain-loader.svg" alt=""/>}
        {props.articles.length > 0 &&
         props.articles.map((article,key) => (
        <Article key={key}>
@@ -78,10 +78,15 @@ const Main = (props) => {
            (article.shareImg && <img src={article.shareImg}/> )}
            </a>
          </ShareImg>
-       
          <SocialActions>
-        
+         <button>
+           <img src="/images/like-icon.svg" alt=""/>
+           <span>Like</span>
+         </button>
+         
          </SocialActions>
+       
+         
        </Article>
           ))}
        </Content>
