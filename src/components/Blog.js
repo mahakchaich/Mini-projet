@@ -12,8 +12,8 @@ const Blog=(props)=>{
      <Container>
          <div className="blog-page">
     <Header/>
-    <Section><h1>Blog<span>📝</span></h1></Section>
-    <Section><h2>ajouter des publications concernant les avis sur les films</h2></Section>
+     <Section><h1>Blog<span>📝</span></h1></Section>
+    <Section><h2>Ajouter Des Publications concernant Votre avis sur les films</h2></Section> 
         
     </div>
      
@@ -37,8 +37,7 @@ const Content = styled.div`
 `;
 
 const Section = styled.section`
- height: 90px;
-
+ height: 0px;
  padding: 16px 0;
  box-sizing: content-box;
  text-align: center;
