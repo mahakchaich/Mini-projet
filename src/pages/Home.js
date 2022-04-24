@@ -1,4 +1,5 @@
 import React from "react";
+import Chat from "../components/chat";
 import Form from "../components/Form";
 import Header from "../components/Header";
 
@@ -7,6 +8,7 @@ const Home=()=>{
     <div className="home-page">
     <Header/>
     <Form/>
+    <Chat/>
     </div>
   );
 };

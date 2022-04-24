@@ -38,6 +38,7 @@ const Home2=(props)=>{
                 Se connecter avec Google
                 </Google>
      </Form>
+     
    </div>
   );
   }

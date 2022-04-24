@@ -1,6 +1,6 @@
 import styled from "styled-components";
 //background
-import background from "./../assets/bg.png";
+import background from "./../assets/bb.jpg";
 import {Link} from "react-router-dom";
 
 export const colors={

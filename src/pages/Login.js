@@ -40,6 +40,8 @@ const Login =({loginUser})=>{
                 onSubmit={(values,{setSubmitting,setFieldError})=>{
                     console.log(values);
                     loginUser(values,setFieldError,setSubmitting);
+                   
+                   
                 }}>{(isSubmitting)=>(
                     <Form>
                       <TextInput
@@ -61,10 +63,12 @@ const Login =({loginUser})=>{
                         <StyledFormButton type="submit" >
                             Se connecter
                         </StyledFormButton>
-                       
+                        
                       </ButtonGroup>
+
                     </Form>
                 )}</Formik>
+                
                 <ExtraText>
                 nouveau ici? <TextLink to="/signup">S'inscrire</TextLink> 
                 </ExtraText>
