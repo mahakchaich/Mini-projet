@@ -5,6 +5,16 @@ import {connect} from "react-redux";
 import {signInAPI} from "../actions";
 import { Redirect } from "react-router-dom";
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import {g, y} from "../components/authMethods";
+import {f} from"../components/authMethods";
+
+import socialMediaAuth from"../components/auth";
+const handleOnClick =async(provider) =>{
+const res=await socialMediaAuth(provider);
+console.log(res);
+window.location.replace("http://localhost:3000/home");
+
+}
 
 
 const Home2=(props)=>{
@@ -32,25 +42,35 @@ const Home2=(props)=>{
      <StyledButton to="/login">Se connecter</StyledButton>
      <StyledButton to="/signup">S'inscrire</StyledButton>
      </ButtonGroup>
-     <Form>
+     
      <Google onClick={()=>props.signIn()}>
            <img src="/img/google.svg" alt="" />
                 Se connecter avec Google
                 </Google>
+      
+      <Form>
+                <a onClick={()=>handleOnClick(g)}><img  height="100" src="/images/github.svg" alt="" /></a>
+                <a onClick={()=>handleOnClick(y)}><img  height="90" src="/images/yahoo.svg" alt="" /></a>
+                <a onClick={()=>handleOnClick(f)}><img height="100" src="/images/facebook.svg" alt="" /></a>
      </Form>
      
    </div>
   );
   }
   const Form = styled.div`
-  margin-top: 100px;
+  margin-top: 50px;
   width: 408px;
+  border-radius: 28px;
+  box-shadow: inset 0 0 0 1px rgb(0 0 0 / 60%),
+    inset 0 0 0 2px rgb(0 0 0 / 0%) inset 0 0 0 1px rgb(0 0 0 / 0);
+  background-color: white;
   @media (max-width: 768px) {
     margin-top: 20px;
   }
 `;
 
 const Google = styled.button`
+  margin-top: 3%;
   display: flex;
   justify-content: center;
   background-color: #fff;

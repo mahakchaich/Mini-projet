@@ -41,6 +41,7 @@ const Signup=(signupUser)=>{
                 }
                 onSubmit={(values,{setSubmitting,setFieldError})=>{
                     // console.log(values);
+                    window.location.replace("http://localhost:3000/home");
                     signupUser(values,setFieldError,setSubmitting)
                 }}>{(isSubmitting)=>(
                     <Form>

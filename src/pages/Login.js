@@ -39,6 +39,7 @@ const Login =({loginUser})=>{
                 }
                 onSubmit={(values,{setSubmitting,setFieldError})=>{
                     console.log(values);
+                    window.location.replace("http://localhost:3000/home");
                     loginUser(values,setFieldError,setSubmitting);
                    
                    

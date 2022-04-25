@@ -18,6 +18,9 @@ const db=firebaseApp.firestore();
 const auth=firebase.auth();
 const provider=new firebase.auth.GoogleAuthProvider();
 const storage=firebase.storage();
+const gitprovider=new firebase.auth.GithubAuthProvider();
+const fbprovider=new firebase.auth.FacebookAuthProvider();
+const yprovider=new firebase.auth.OAuthProvider('yahoo.com');
 
-export{auth,provider,storage};
+export{auth,provider,storage,gitprovider,fbprovider,yprovider};
 export default db;
